@@ -27,7 +27,7 @@ produtos: List[Dict[str, any]] = [
 
 @app.get("/") # Request
 def read_root(): #  Response
-    return {"Hello": "People"}
+    return {"Hello": "World"}
 
 @app.get("/produtos")
 def listar_produtos():
