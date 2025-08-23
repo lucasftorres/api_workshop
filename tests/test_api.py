@@ -2,7 +2,7 @@ import pytest
 
 from fastapi.testclient import TestClient
 
-from main import app
+from app.main import app
 
 client = TestClient(app)
 
@@ -28,5 +28,5 @@ def test_buscar_produto():
         "id": 1,
         "nome": "Smartphone",
         "descricao": "Um smartphone de última geração",
-        "preco": 999.99
+        "preco": 999
     }
